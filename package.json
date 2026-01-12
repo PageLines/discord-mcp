@@ -1,0 +1,48 @@
+{
+  "name": "@anthropic/discord-mcp",
+  "version": "1.0.0",
+  "description": "Discord MCP server for Claude - manage Discord servers via Model Context Protocol",
+  "main": "dist/index.js",
+  "bin": {
+    "discord-mcp": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["mcp", "discord", "claude", "anthropic", "model-context-protocol"],
+  "author": "PageLines",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PageLines/discord-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PageLines/discord-mcp/issues"
+  },
+  "homepage": "https://github.com/PageLines/discord-mcp#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "discord.js": "^14.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
