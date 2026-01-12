@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic/discord-mcp",
+  "name": "@pagelines/discord-mcp",
   "version": "1.0.0",
   "description": "Discord MCP server for Claude - manage Discord servers via Model Context Protocol",
   "main": "dist/index.js",
