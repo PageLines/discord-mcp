@@ -1,19 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "io.github.pagelines/discord-mcp",
+  "title": "Discord MCP Server",
   "description": "Discord MCP server - manage Discord servers, channels, messages, webhooks via Model Context Protocol",
   "version": "1.0.0",
-  "repository": {
-    "url": "https://github.com/PageLines/discord-mcp",
-    "source": "github"
-  },
   "packages": [
     {
-      "registry_type": "npm",
+      "registryType": "npm",
       "identifier": "@pagelines/discord-mcp",
       "version": "1.0.0",
-      "runtime": "node",
-      "runtime_arguments": []
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }

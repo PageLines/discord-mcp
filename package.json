@@ -5,7 +5,7 @@
   "description": "Discord MCP server for Claude - manage Discord servers via Model Context Protocol",
   "main": "dist/index.js",
   "bin": {
-    "discord-mcp": "./dist/index.js"
+    "discord-mcp": "dist/index.js"
   },
   "type": "module",
   "scripts": {
@@ -18,12 +18,18 @@
     "lint": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["mcp", "discord", "claude", "anthropic", "model-context-protocol"],
+  "keywords": [
+    "mcp",
+    "discord",
+    "claude",
+    "anthropic",
+    "model-context-protocol"
+  ],
   "author": "PageLines",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PageLines/discord-mcp.git"
+    "url": "git+https://github.com/PageLines/discord-mcp.git"
   },
   "bugs": {
     "url": "https://github.com/PageLines/discord-mcp/issues"
