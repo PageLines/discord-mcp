@@ -1,6 +1,7 @@
 {
   "name": "@pagelines/discord-mcp",
   "version": "1.0.0",
+  "mcpName": "io.github.pagelines/discord-mcp",
   "description": "Discord MCP server for Claude - manage Discord servers via Model Context Protocol",
   "main": "dist/index.js",
   "bin": {
